@@ -19,14 +19,14 @@ inputs:
   scope:
     description: 'full (default) or minimal image'
     required: false
-    default: full
+    default: minimal
   version:
     description: 'dist_release version (upstream if not given)'
     required: false
   kernel:
     description: 'kernel version'
     required: false
-    default: linux510
+    default: linux613
   code-name:
     description: 'manjaro code-name (upstream if not given)'
     required: false
@@ -35,7 +35,7 @@ inputs:
     required: false
   custom-repo:
     description: 'name a custom repo to be prioritized above the default ones'
-    required: false
+    required: true
   office-chooser:
     description: 'include calamares office installer module'
     required: false
